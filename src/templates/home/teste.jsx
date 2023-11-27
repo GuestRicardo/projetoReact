@@ -9,7 +9,7 @@ export class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div className='container'>
         <h1>Testes</h1>
         <h2>{this.state.counter}</h2>
       </div>
