@@ -10,10 +10,11 @@ export class Home extends Component {
   handleClick = () => {
     this.setState(
       (estadoAnterior, propsAnterior) => {
-        return {counter: this.state.counter + 1}
+        console.log('Estado anterior',estadoAnterior.counter)
+        return {counter: estadoAnterior.counter + 1}
       },
       () => {
-        console.log(this.state.counter);
+        console.log('Estado atual',this.state.counter );
       }
     );
 
