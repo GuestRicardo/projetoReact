@@ -9,7 +9,14 @@ export class Home extends Component {
 
   handleClick = ()=>{
     this.setState({counter: this.state.counter + 1});
-    console.log(this.state.counter)
+    console.log(this.state.counter);
+    /**
+     * Oq esta sendo manipulado acima, 
+     * nao é o DOM do navegador,
+     * na verdade é o virtual DOM
+     * ou seja é uma copia do DOM real
+     * 
+     */
   }
 
   render() {
