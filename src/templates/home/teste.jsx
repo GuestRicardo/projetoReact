@@ -9,7 +9,7 @@ export class Home extends Component {
 
   handleClick = () => {
     this.setState(
-      (estadoAnterior, propsAnterior) => {
+      (estadoAnterior) => {
         console.log('Estado anterior',estadoAnterior.counter)
         return {counter: estadoAnterior.counter + 1}
       },
