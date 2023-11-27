@@ -24,7 +24,8 @@ export class Home extends Component {
      * codigo assicrono é quando ele esta na espera, equnto o outros codigos estao em simultaneo, ai ele começa com
      * um estado e é preciso usar o setState q vai sicronizar com um Callback
      * n o exemplo acima esta sendo mostrado como funciona, this.setState esta sendo assicrono com a função q esta sendo carregado o console.log
-     * entao, handleClick esta passando para o react
+     * entao, handleClick esta passando para o react, execultar a função q esta sendo contadora e depois q ela terminar
+     * entao entrará o console.log
      * 
      */
   }
