@@ -6,6 +6,6 @@ describe('<ButtonCarregar />',()=>{
     it('should render the button with the text', ()=>{
         render(<ButtonCarregar />);
 
-        const button = screen.
+        const button = screen.getByRole('button', { name: /load more/i })
     })
 })
