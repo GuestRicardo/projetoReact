@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react"
 import { ButtonCarregar } from "./button-carregar";
+import userEvent from "@testing-library/user-event";
 
 describe('<ButtonCarregar />',()=>{
     //para garantir q o botao esta sendo carregado
@@ -11,13 +12,15 @@ describe('<ButtonCarregar />',()=>{
         const button = screen.getByRole('button', { name: /load more/i });
         expect(button).toBeInTheDocument();
     });
-    //para garantir q as funções sejam carregadas
+    
+    //para garantir q as funções sejam carregadas, click no botao    
     it('should call function on button click', ()=>{
-        render(<ButtonCarregar text='load more' />);
-
-        expect.assertions(1);
+        const fn = jest.fn();
+        render(<ButtonCarregar text='load more' onClick={fn} />);
 
         const button = screen.getByRole('button', { name: /load more/i });
-        expect(button).toBeInTheDocument();
-    })
+        userEvent.click(button);
+
+        expect(fn).toHaveBeenCalledTimes(1);
+    });
 })
