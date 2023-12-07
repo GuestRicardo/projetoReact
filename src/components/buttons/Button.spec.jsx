@@ -24,7 +24,7 @@ describe('<ButtonCarregar />',()=>{
         expect(fn).toHaveBeenCalledTimes(1);
     });
     //para testar o disable   
-    it('should call function on button click', ()=>{
+    it('should ', ()=>{
         const fn = jest.fn();
         render(<ButtonCarregar text='load more' onClick={fn} />);
 
