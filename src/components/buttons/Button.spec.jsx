@@ -23,14 +23,13 @@ describe('<ButtonCarregar />',()=>{
 
         expect(fn).toHaveBeenCalledTimes(1);
     });
-    //para testar o disable   
-    it('should ', ()=>{
-        const fn = jest.fn();
-        render(<ButtonCarregar text='load more' onClick={fn} />);
 
-        const button = screen.getByRole('button', { name: /load more/i });
-        userEvent.click(button);
+    //para testar o disable  esta funcionando 
+    it('should be enable when disable is false', ()=>{      
+        render(<ButtonCarregar text='load more' disable={false} />);
 
-        expect(fn).toHaveBeenCalledTimes(1);
+        const button = screen.getByRole('button', { name: /load more/i });     
+
+        expect(button).toBeEnabled();
     });
 })
