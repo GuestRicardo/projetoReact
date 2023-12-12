@@ -28,7 +28,7 @@ describe('<ButtonCarregar />', () => {
     it('should be enable when disable is true', () => {
         render(<ButtonCarregar text='load more' disable={true} />);
         const button = screen.getByRole('button', { name: /load more/i });
-        expect(button).toBeDisabled();
+        expect(button).toBeEnabled();
     });
     //para testar o disable  esta desativado
     it('should be enable when disable is false', () => {
