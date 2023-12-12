@@ -24,7 +24,7 @@ describe('<ButtonCarregar />', () => {
         expect(fn).toHaveBeenCalledTimes(1);
     });
 
-    //para testar o disable  esta ativado
+    // //para testar o disable  esta ativado
     it('should be enable when disable is true', () => {
         render(<ButtonCarregar text='load more' disable={true} />);
         const button = screen.getByRole('button', { name: /load more/i });
