@@ -13,6 +13,7 @@ describe('<PostCard />', () => {
     //aqui precisar ser testado se tudo foi renderizado corretamente é somente isso
     it('shoud render PostCard correctly', () => {
         const { debug } = render(<PostCard {...mock} />);
+        //esse debug é tipo um console log, para saber o q esta na tela
         debug();
-    })
+    });
 });
