@@ -13,6 +13,10 @@ describe('<PostCard />', () => {
         // esse tipo de teste e conhecido como snapshot, pois ele tira um print do elemento
         //debug();
         //aq esta falando q tem q ter certeza que tem uma imagem no documento e tem q ser (.img)
+        //e esta sendo confirmado o q tem q esta esta no mock
+        //ou
+        //pode se usar expressao regular, so q é menos criterioso, pq pega somente um trecho especifico
+        //expect(screen.getByRole('img', { name: 'title 1' })).toBeInTheDocument();
         expect(screen.getByRole('img', { name: 'title 1' })).toBeInTheDocument();
     });
 });
