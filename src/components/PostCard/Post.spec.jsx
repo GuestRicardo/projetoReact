@@ -20,7 +20,7 @@ describe('<PostCard />', () => {
         
         //aq so esta sendo checado se tem o titulo no documento e imagem prontas
         expect(screen.getByRole('img', { name: 'title 1' }))
-        //entao sera verificado se ela contem o atributo de src, com valor q é meu props.cover
-        .toHaveAttribute('src', props.cover);
+        //entao sera verificado se ela contem o atributo de src, com o caminho da imagem
+        .toHaveAttribute('src', 'img/img.png');
     });
 });
