@@ -16,7 +16,7 @@ describe('<PostCard />', () => {
         //e esta sendo confirmado o q tem q esta esta no mock
         //ou
         //pode se usar expressao regular, so q é menos criterioso, pq pega somente um trecho especifico
-        //expect(screen.getByRole('img', { name: 'title 1' })).toBeInTheDocument();
+        //expect(screen.getByRole('img', { name: /title 1/i })).toBeInTheDocument();
         expect(screen.getByRole('img', { name: 'title 1' })).toBeInTheDocument();
     });
 });
