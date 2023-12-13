@@ -17,7 +17,10 @@ describe('<PostCard />', () => {
         //ou
         //pode se usar expressao regular, so q é menos criterioso, pq pega somente um trecho especifico
         //expect(screen.getByRole('img', { name: /title 1/i })).toBeInTheDocument();
-        //aq so esta sendo checado se tem o titulo no documento
-        expect(screen.getByRole('img', { name: 'title 1' })).toBeInTheDocument();
+        
+        //aq so esta sendo checado se tem o titulo no documento e imagem prontas
+        expect(screen.getByRole('img', { name: 'title 1' }))
+        //entao sera verificado se ela contem o atributo de src, com valor q é meu props.cover
+        .toHaveAttribute('src', props.cover);
     });
 });
