@@ -1,7 +1,7 @@
 import { PostCard } from ".";
 import { render } from "@testing-library/react";
 
-//dados falsos, para fazer o teste
+//dados falsos, para fazer o teste(mock)
 const mock = {
     title: 'title 1',
     body: 'body 1',
