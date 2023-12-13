@@ -1,5 +1,5 @@
 import { PostCard } from ".";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { postCardPropsMock } from "./mock";
 
 const props = postCardPropsMock;
@@ -11,5 +11,6 @@ describe('<PostCard />', () => {
         //esse debug é tipo um console log, para saber o q esta na tela,
         // esse tipo de teste e conhecido como snapshot, pois ele tira um print do elemento
         debug();
+        //aq esta falando q tem q ter uma imagem (.img)
     });
 });
