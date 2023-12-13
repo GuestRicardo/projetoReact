@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonCarregar /> should match snapshot 1`] = `
+<div
+  class="buttonCenter"
+>
+  <button
+    class="buttonC"
+  >
+    load more
+  </button>
+</div>
+`;

@@ -36,4 +36,10 @@ describe('<ButtonCarregar />', () => {
         const button = screen.getByRole('button', { name: /load more/i });
         expect(button).toBeEnabled();
     });
+    //tirando o print do codigo
+    it('should match snapshot',()=>{
+        const fn = jest.fn();
+        const { container } = render(<ButtonCarregar text='load more' disable={false} />);
+        expect(container.firstChild).toMatchSnapshot();
+    });
 })
