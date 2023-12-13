@@ -24,5 +24,7 @@ describe('<PostCard />', () => {
         .toHaveAttribute('src', 'img/img.png');
         //agora sera verificado o heading()
         expect(screen.getByRole('img', { name: /title 1/i })).toBeInTheDocument();
+        //agora sera testado o paragrafo
+        expect(screen.getByText('body 1')).toBeInTheDocument();
     });
 });
