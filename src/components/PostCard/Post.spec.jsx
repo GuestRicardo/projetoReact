@@ -17,6 +17,7 @@ describe('<PostCard />', () => {
         //ou
         //pode se usar expressao regular, so q é menos criterioso, pq pega somente um trecho especifico
         //expect(screen.getByRole('img', { name: /title 1/i })).toBeInTheDocument();
+        //aq so esta sendo checado se tem o titulo no documento
         expect(screen.getByRole('img', { name: 'title 1' })).toBeInTheDocument();
     });
 });
