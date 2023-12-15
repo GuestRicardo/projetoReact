@@ -30,6 +30,8 @@ describe('<Posts />', ()=>{
    it('should render posts', ()=>{
     const {debug} = render('<Posts />')
     //debug();
+
+    
    });
 
 });
