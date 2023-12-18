@@ -32,8 +32,11 @@ describe('<Posts />', () => {
         render(<Posts {...props} />)
         //debug();
         expect(screen.getAllByRole('heading', { name: /title/i }))
-            .toHaveLength(3); //precisa de 3 titulos no post
-
+            .toHaveLength(3); 
+        expect(screen.getAllByRole('img', { name: /title/i }))
+            .toHaveLength(3); 
+        expect(screen.getAllByText(/body/i))
+            .toHaveLength(3);
     });
 
 });
