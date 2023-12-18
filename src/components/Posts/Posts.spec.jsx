@@ -36,7 +36,7 @@ describe('<Posts />', () => {
         expect(screen.getAllByRole('img', { name: /title/i }))
             .toHaveLength(3); 
         expect(screen.getAllByText(/body/i))
-            .toHaveLength(3);
+            .toHaveLength(4);
     });
 
 });
