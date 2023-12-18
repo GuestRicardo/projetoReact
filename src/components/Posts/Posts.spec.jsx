@@ -31,10 +31,13 @@ describe('<Posts />', () => {
         /**   const { debug } = */
         render(<Posts {...props} />)
         //debug();
+        //heading
         expect(screen.getAllByRole('heading', { name: /title/i }))
             .toHaveLength(3); 
+            //imagem
         expect(screen.getAllByRole('img', { name: /title/i }))
             .toHaveLength(3); 
+            //titulos paragrafos 
         expect(screen.getAllByText(/body/i))
             .toHaveLength(3);
     });
