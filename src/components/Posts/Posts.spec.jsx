@@ -29,7 +29,7 @@ const props = {
 describe('<Posts />', () => {
     it('should render posts', () => {
         /**   const { debug } = */
-        render(<Posts {...props} />)
+        render(<Posts {...props} />);
         //debug();
         //heading
         expect(screen.getAllByRole('heading', { name: /title/i }))
