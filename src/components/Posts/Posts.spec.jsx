@@ -25,7 +25,6 @@ posts: [
 ]
 };
 //fim do mock de teste
-
 describe('<Posts />', ()=>{
    it('should render posts', ()=>{
     const {debug} = render('<Posts />')
