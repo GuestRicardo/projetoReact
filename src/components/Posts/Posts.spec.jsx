@@ -25,12 +25,14 @@ const props = {
     ]
 };
 //fim do mock de teste
+
 describe('<Posts />', () => {
     it('should render posts', () => {
-        const { debug } = render('<Posts {...props} />')
+        /**   const { debug } = */
+        render(<Posts {...props} />)
         //debug();
-        expect(screen.getAllByRole('heading', {name: /title/i}))
-        .toHaveLength(3); //precisa de 3 titulos no post
+        expect(screen.getAllByRole('heading', { name: /title/i }))
+            .toHaveLength(3); //precisa de 3 titulos no post
 
     });
 
