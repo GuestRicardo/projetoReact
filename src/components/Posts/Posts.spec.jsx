@@ -49,7 +49,7 @@ describe('<Posts />', () => {
     });
     it('should MATCH snapshot', () => {
         const { container } = render(<Posts {...props} />);
-        expect(container.firstChild).toMatchInlineSnapshot();
+        expect(container.firstChild).toMatchSnapshot();
     });
 
 });
