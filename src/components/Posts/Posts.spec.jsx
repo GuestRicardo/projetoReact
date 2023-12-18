@@ -33,11 +33,17 @@ describe('<Posts />', () => {
         //debug();
         //heading
         expect(screen.getAllByRole('heading', { name: /title/i }))
-            .toHaveLength(3); 
-            //imagem
+            .toHaveLength(3);
+
+        //imagem
         expect(screen.getAllByRole('img', { name: /title/i }))
-            .toHaveLength(3); 
-            //titulos paragrafos 
+            .toHaveLength(3);
+
+        //imagem especifica 
+        expect(screen.getAllByRole('img', { name: /title 3/i }))
+            .toHaveAttribute('src', 'img/img3.png');
+
+        //titulos paragrafos 
         expect(screen.getAllByText(/body/i))
             .toHaveLength(3);
     });
