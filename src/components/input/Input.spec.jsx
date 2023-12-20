@@ -1,5 +1,7 @@
 import { screen, render } from "@testing-library/react";
-import { InputSearch } from './index';
+import userEvent from "@testing-library/user-event";  
+
+import { InputSearch } from '.';
 
 describe('<InputSearch />', () => {
     //ha cada tecla pressionada sera chamada a função handleChange 
