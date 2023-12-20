@@ -1,12 +1,12 @@
 import { screen, render } from "@testing-library/react";
-import { Input } from './index';
+import { InputSearch } from './index';
 
-describe('<Input />', () => {
+describe('<InputSearch />', () => {
     //ha cada tecla pressionada sera chamada a função handleChange 
     it('should Call handleChange function on each key pressed', () => {
         //esta função nao serve para nada, ela esta aq somente para ser chamada como teste     
         const fn = jest.fn();
-        render(<Input handleChange={fn} searchValue={'testando'}/>);
+        render(<InputSearch handleChange={fn} searchValue={'testando'}/>);
 
     });
     // it('', () => {
