@@ -29,6 +29,7 @@ describe('<InputSearch />', () => {
     it('should match snapshot', () => {
         const fn = jest.fn();
         const {container} = render(<InputSearch handleChange={fn} />);
+        
         expect(container).toMatchSnapshot();
     });
 

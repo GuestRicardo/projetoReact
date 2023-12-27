@@ -46,7 +46,7 @@ describe('<Posts />', () => {
         //titulos paragrafos 
         expect(screen.getAllByText(/body/i))
             .toHaveLength(3);
-    });
+    }); b
     //para testar quando nao tiver nenhum post
     it('should not render posts', () => {
         render(<Posts/>);
