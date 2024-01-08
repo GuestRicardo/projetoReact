@@ -60,7 +60,7 @@ export class Home extends Component {
     const { posts, searchValue, allPosts } = this.state;
 
     //se caso tiver valor, será filtrado e
-    const filteredPosts = !!searchValue ?
+    const filteredPosts = searchValue ?
       allPosts.filter(post => {//e retornara
         return post.title.toLocaleLowerCase().includes(searchValue.toLowerCase());
         //todos os posts q for digitado no input usando o searchValue

@@ -13,7 +13,7 @@ export const InputSearch = ({ searchValue, handleChange }) =>{
                     //value é o estado do elemento
                     value={searchValue}
                 />
-                <label for="name" className="form__label">Digite á Busca</label>
+                <label htmlFor="name" className="form__label">Digite á Busca</label>
             </div>
         </div>
     )
