@@ -18,3 +18,6 @@ export const InputSearch = ({ searchValue, handleChange }) => {
     </div>
   )
 }
+InputSearch.propTypes = {
+
+}
