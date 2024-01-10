@@ -1,7 +1,8 @@
+import P from 'prop-types';
 import { PostCard } from '../PostCard';
 
 // eslint-disable-next-line react/prop-types
-export const Posts = ({ posts = []}) => (
+export const Posts = ({ posts = [] }) => (
   // eslint-disable-next-line react/react-in-jsx-scope
   <div className="posts">
     {posts.map(post => (
@@ -16,3 +17,7 @@ export const Posts = ({ posts = []}) => (
     ))}
   </div>
 );
+Posts.propTypes = {
+  posts: P.array,
+
+}
