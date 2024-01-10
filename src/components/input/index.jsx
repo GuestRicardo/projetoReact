@@ -19,5 +19,6 @@ export const InputSearch = ({ searchValue, handleChange }) => {
   )
 }
 InputSearch.propTypes = {
-
+  searchValue: P.string.isRequired,
+  handleChange: P.func.isRequired
 }
